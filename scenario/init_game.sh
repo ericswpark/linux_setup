@@ -7,3 +7,4 @@
 curl -o- https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_factorio.sh | bash
 
 # REPLACE THIS LINE WITH MINECRAFT SETUP
+curl -o- https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_minecraft.sh | bash
