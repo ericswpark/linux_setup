@@ -4,7 +4,7 @@ read -p "Enter Minecraft server package URL: " minecraft_url
 read -p "Enter minimum RAM in MB (256 recommended, 32 for low RAM): " ram_minimum
 read -p "Enter maximum RAM in MB (512 recommended, 256 for low RAM): " ram_maximum
 
-sudo apt install openjdk-8-jre-headless screen
+sudo apt install openjdk-8-jre-headless
 mkdir minecraft
 cd minecraft
 wget $minecraft_url -O minecraft_server.jar
