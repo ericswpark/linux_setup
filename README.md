@@ -6,17 +6,17 @@ Linux setup scripts
 
 ## Initial server setup
 
-    curl -o- https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_server.sh | bash
+    curl -s https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_server.sh | bash -s
 
 
 ## Game setup (depends on initial server setup)
 
-    curl -o- https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_factorio.sh | bash
+    curl -s https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_factorio.sh | bash -s
 
 ## Factorio setup
 
-    curl -o- https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_factorio.sh | bash
+    curl -s https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_factorio.sh | bash -s
 
 ## Minecraft setup
 
-    curl -o- https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_minecraft.sh | bash
+    curl -s https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_minecraft.sh | bash -s
