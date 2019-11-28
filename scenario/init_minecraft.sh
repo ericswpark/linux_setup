@@ -10,8 +10,12 @@ cd minecraft
 wget $minecraft_url -O minecraft_server.jar
 echo "#!/bin/sh
 
-java -Xms$ram_minimum -Xmx$ram_maximum -jar minecraft_server.jar -o true" > start.sh
+RAM_MINIMUM = $ram_minimum
+RAM_MAXIMUM = $ram_maximum
+
+java -Xms\$RAM_MINIMUM -Xmx\$RAM_MAXIMUM -jar minecraft_server.jar -o true" > start.sh
 chmod +x start.sh
 
 echo "Minecraft setup done. Please transfer your save files."
 echo "You can start the server by running the start.sh file."
+echo "To change RAM values, edit the start.sh file and find the corresponding variables."
