@@ -16,8 +16,8 @@ echo "Downloading server binary... This may take a while!"
 wget $minecraft_url -O minecraft_server.jar
 echo "#!/bin/bash
 
-RAM_MINIMUM = $ram_minimum
-RAM_MAXIMUM = $ram_maximum
+RAM_MINIMUM=$ram_minimum
+RAM_MAXIMUM=$ram_maximum
 
 java -Xms\"\$RAM_MINIMUM\"m -Xmx\"\$RAM_MAXIMUM\"m -jar minecraft_server.jar" > start.sh
 chmod +x start.sh
