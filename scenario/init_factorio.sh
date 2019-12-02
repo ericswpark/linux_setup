@@ -30,6 +30,8 @@ tar -czvf \"\$date\".tar.gz \\
     player-data.json \\
     start.sh
 
+md5sum \"\$date\".tar.gz > \"\$date\".tar.gz.md5
+
 echo \"Backup created!\"" > backup.sh
 
 # Give executable permissions for both files
