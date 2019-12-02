@@ -9,7 +9,7 @@ Linux setup scripts
     bash <(curl -s https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_server.sh)
 
 
-## Game setup (depends on initial server setup)
+## Game setup (REQUIRES initial server setup)
 
     bash <(curl -s https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_game.sh)
 
