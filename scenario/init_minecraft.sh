@@ -14,7 +14,7 @@ cd minecraft
 
 echo "Downloading server binary... This may take a while!"
 wget $minecraft_url -O minecraft_server.jar
-echo "#!/bin/sh
+echo "#!/bin/bash
 
 RAM_MINIMUM = $ram_minimum
 RAM_MAXIMUM = $ram_maximum
