@@ -11,7 +11,7 @@ Linux setup scripts
 
 ## Game setup (depends on initial server setup)
 
-    bash <(curl -s https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_factorio.sh)
+    bash <(curl -s https://raw.githubusercontent.com/ideaman924/linux_setup/master/scenario/init_game.sh)
 
 ## Factorio setup
 
