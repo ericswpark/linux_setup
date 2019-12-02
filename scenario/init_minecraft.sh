@@ -25,3 +25,4 @@ chmod +x start.sh
 echo "Minecraft setup done. Please transfer your save files."
 echo "You can start the server by running the start.sh file."
 echo "To change RAM values, edit the start.sh file and find the corresponding variables."
+echo "You may also need to agree to the Minecraft EULA by modifying the eula.txt file."
