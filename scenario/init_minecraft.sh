@@ -6,7 +6,7 @@ read -p "Enter minimum RAM in MB (256 recommended, 32 for low RAM): " ram_minimu
 read -p "Enter maximum RAM in MB (512 recommended, 256 for low RAM): " ram_maximum
 
 echo "Starting installation of OpenJDK! Please input your sudo password below."
-sudo apt install openjdk-11-jre-headless
+sudo apt install -y openjdk-11-jre-headless
 
 echo "Creating Minecraft support files at the minecraft/ directory..."
 mkdir minecraft
