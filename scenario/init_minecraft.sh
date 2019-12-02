@@ -19,7 +19,7 @@ echo "#!/bin/bash
 RAM_MINIMUM = $ram_minimum
 RAM_MAXIMUM = $ram_maximum
 
-java -Xms'\$RAM_MINIMUM' -Xmx'\$RAM_MAXIMUM' -jar minecraft_server.jar -o true" > start.sh
+java -Xms'\$RAM_MINIMUM'm -Xmx'\$RAM_MAXIMUM'm -jar minecraft_server.jar -o true" > start.sh
 chmod +x start.sh
 
 echo "Minecraft setup done. Please transfer your save files."
