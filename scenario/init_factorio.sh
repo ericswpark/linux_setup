@@ -13,15 +13,15 @@ echo "./bin/x64/factorio --start-server-load-latest --server-settings ./config/s
 # Backup script
 echo "#!/bin/bash
 
-date=$(date '+%Y%m%d')
+date=\$(date '+%Y%m%d')
 
-tar -czvf \"$date\".tar.gz \
-    saves/ \
-    config/ \
-    achievements.dat \
-    config-path.cfg \
-    server-adminlist.json \
-    player-data.json \
+tar -czvf \"\$date\".tar.gz \\
+    saves/ \\
+    config/ \\
+    achievements.dat \\
+    config-path.cfg \\
+    server-adminlist.json \\
+    player-data.json \\
     start.sh
 
 echo \"Backup created!\"" > backup.sh
