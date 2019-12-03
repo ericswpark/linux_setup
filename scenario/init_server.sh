@@ -6,7 +6,7 @@ read -p "Enter username: " username
 
 adduser $username
 apt update
-apt upgrade
+apt -y upgrade
 apt install -y sudo
 usermod -aG sudo $username
 apt install -y tmux htop
