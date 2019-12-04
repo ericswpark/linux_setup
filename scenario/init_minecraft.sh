@@ -5,6 +5,7 @@ echo "Downloading server component..."
 echo "Note that you can choose between vanilla, Paper, Bukkit, Spigot, and other Minecraft Servers."
 echo "To download vanilla, follow this URL: https://www.minecraft.net/en-us/download/server/"
 echo "To download PaperMC, follow this URL: https://papermc.io/downloads"
+echo "To find the download package, right-click on the URL or build number and click on Copy Link Address."
 read -p "Enter Minecraft server package URL: " minecraft_url
 read -p "Enter minimum RAM in MB (256 recommended, 32 for low RAM): " ram_minimum
 read -p "Enter maximum RAM in MB (512 recommended, 256 for low RAM): " ram_maximum
