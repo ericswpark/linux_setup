@@ -23,7 +23,7 @@ else
     echo "[init_minecraft.sh] Unsupported distribution detected."
     echo "[init_minecraft.sh] Please install the equivalent of OpenJDK's headless JRE on your distribution."
     echo "[init_minecraft.sh] For Arch-based distributions, install jre-openjdk-headless."
-    echo "[init_minecraft.sh] Execution will now continue...
+    echo "[init_minecraft.sh] Execution will now continue..."
 fi
 
 # minecraft/ directory
