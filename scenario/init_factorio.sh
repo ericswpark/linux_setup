@@ -1,10 +1,20 @@
 #!/bin/bash
 
 # Ask what Factorio version to install
-read -p "Enter Factorio version: " factorio_version
+read -p "[init_factorio.sh] Enter Factorio version: " factorio_version
 
 # Required for extracting Factorio's curious tar format
-sudo apt install xz-utils
+if [ "$(grep -Ei 'debian|buntu|mint' /etc/*release)" ]; then
+    # Debian-based distro detected
+    echo "[init_factorio.sh] Detected a Debian-based distribution!"
+    echo "[init_factorio.sh] Installing dependencies. Enter your sudo password below:"
+    sudo apt install -y xz-utils
+else
+    # Unsupported configuration
+    echo "[init_factorio.sh] Unsupported distribution detected."
+    echo "[init_factorio.sh] Please install the equivalent of xz-utils on your distribution."
+    echo "[init_factorio.sh] Execution will now continue..."
+fi
 
 # Fetch and unpack headless server
 wget -O factorio.tar https://www.factorio.com/get-download/$factorio_version/headless/linux64
@@ -40,6 +50,6 @@ chmod +x backup.sh
 cd
 
 # Show result to user
-echo "Factorio setup done. Please put in your save files in the factorio/ directory."
-echo "You can start the server by running the start.sh file."
-echo "To back up your server, run backup.sh."
+echo "[init_factorio.sh] Factorio setup done. Please put in your save files in the factorio/ directory."
+echo "[init_factorio.sh] You can start the server by running the start.sh file."
+echo "[init_factorio.sh] To back up your server, run backup.sh."
