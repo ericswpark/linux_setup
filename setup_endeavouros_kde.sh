@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install basic things
-sudo pacman -S --noconfirm --needed htop vim
+sudo pacman -S --noconfirm --needed htop vim mpv
 
 # Install ffmpegthumbs for video thumbnail previews in Dolphin
 # (Don't forget to enable them in settings!)
