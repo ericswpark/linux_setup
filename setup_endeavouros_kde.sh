@@ -1,7 +1,19 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Install basic things
-sudo pacman -S --noconfirm --needed btop vim mpv
+# Install applications I need
+PROGRAMS=(
+  # Utilities
+  btop tailscale
+  # Editors
+  neovim zeditor
+  # Media
+  mpv
+  # Authentication
+  bitwarden
+  # Study
+  obsidian
+  # Social
+  discord
+)
+sudo pacman -S --noconfirm --needed "${PARAMS[@]}"
 
-# Install applications
-sudo pacman -S --noconfirm --needed bitwarden
