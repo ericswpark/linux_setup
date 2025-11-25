@@ -15,5 +15,5 @@ PROGRAMS=(
   # Social
   discord
 )
-sudo pacman -S --noconfirm --needed "${PARAMS[@]}"
+sudo pacman -S --noconfirm --needed "${PROGRAMS[@]}"
 
