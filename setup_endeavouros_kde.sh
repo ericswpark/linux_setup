@@ -5,7 +5,7 @@ PROGRAMS=(
   # Utilities
   btop tailscale
   # Editors
-  neovim zeditor
+  neovim zed
   # Media
   mpv
   # Authentication
