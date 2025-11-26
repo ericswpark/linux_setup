@@ -5,7 +5,7 @@ set -euo pipefail
 # Install applications I need
 PROGRAMS=(
   # Utilities
-  btop tailscale
+  btop tailscale git
   # Editors
   neovim zed
   # Media
