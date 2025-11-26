@@ -23,3 +23,10 @@ sudo pacman -S --noconfirm --needed "${PROGRAMS[@]}"
 # Set up git
 git config --global user.email "me@ericswpark.com"
 git config --global user.name "Eric Park"
+
+# Install programs from AUR
+AUR_PROGRAMS=(
+  # Study
+  kuro-bin
+)
+yay -S --noconfirm --needed "${AUR_PROGRAMS[@]}"
