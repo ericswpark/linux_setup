@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 # Install applications I need
 PROGRAMS=(
   # Utilities
