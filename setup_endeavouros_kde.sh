@@ -16,6 +16,8 @@ PROGRAMS=(
   obsidian
   # Social
   discord
+  # Email
+  thunderbird
 )
 sudo pacman -S --noconfirm --needed "${PROGRAMS[@]}"
 
