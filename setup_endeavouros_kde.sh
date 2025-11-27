@@ -15,7 +15,7 @@ PROGRAMS=(
   # Study
   obsidian
   # Social
-  discord
+  discord signal-desktop
   # Email
   thunderbird
 )
